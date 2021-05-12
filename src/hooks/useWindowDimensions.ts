@@ -1,10 +1,9 @@
-// TODO Do we need this?
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 
 export const useWindowDimensions = () => {
   const hasWindow = typeof window !== "undefined";
 
-  const getWindowDimensions = () => {
+  const getWindowDimensions = useCallback(() => {
     const width = hasWindow ? window.innerWidth : null;
     const height = hasWindow ? window.innerHeight : null;
 
@@ -12,7 +11,7 @@ export const useWindowDimensions = () => {
       width,
       height,
     };
-  };
+  }, [hasWindow]);
 
   const [windowDimensions, setWindowDimensions] = useState(
     getWindowDimensions(),
@@ -28,8 +27,7 @@ export const useWindowDimensions = () => {
 
       return () => window.removeEventListener("resize", handleResize);
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [hasWindow]);
+  }, [hasWindow, getWindowDimensions]);
 
   return windowDimensions;
 };
