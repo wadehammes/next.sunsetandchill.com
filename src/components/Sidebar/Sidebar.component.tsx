@@ -37,10 +37,6 @@ const Social = styled.div`
   justify-content: center;
   text-align: center;
 
-  &:hover svg {
-    opacity: 0.5;
-  }
-
   svg {
     margin: 0 0.75em;
     width: 1.5em;
@@ -50,6 +46,10 @@ const Social = styled.div`
     &:hover {
       opacity: 1;
     }
+  }
+
+  &:hover svg {
+    opacity: 0.5;
   }
 `;
 
