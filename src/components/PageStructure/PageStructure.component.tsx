@@ -1,9 +1,12 @@
 import React, { FC } from "react";
-import { Content, Grid, Sidebar } from "src/components/Layout";
+import { Content, Grid } from "src/components/Layout";
+import Sidebar from "src/components/Sidebar/Sidebar.component";
 
 export const PageStructure: FC = ({ children }) => (
-  <Grid data-testid="scPageStructure">
-    <Sidebar data-testid="scSidebar">Sidebar</Sidebar>
+  <Grid data-testid="scPageStructure" gridHeight="100vh">
+    <div>
+      <Sidebar>Sidebar</Sidebar>
+    </div>
     <Content data-testid="scContent">{children}</Content>
   </Grid>
 );
