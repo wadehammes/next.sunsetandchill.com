@@ -13,11 +13,7 @@ export const Grid = styled.div<GridProps>`
   height: ${({ gridHeight }) => gridHeight ?? "100vh"};
 
   @media ${device.tablet} {
-    grid-template-columns: ${({ theme }) => theme.grid.sidebar.tablet} 1fr;
-  }
-
-  @media ${device.laptop} {
-    grid-template-columns: ${({ theme }) => theme.grid.sidebar.laptop} 1fr;
+    grid-template-columns: ${({ theme }) => theme.grid.sidebar} 1fr;
   }
 `;
 

@@ -1,10 +1,15 @@
 import styled from "styled-components";
 import React from "react";
+import { device } from "src/styles/theme";
 
 const LogoWrapper = styled.svg`
   height: auto;
-  width: 100%;
+  width: 16em;
   margin: 0 0 ${({ theme }) => theme.padding.mobile};
+
+  @media ${device.tablet} {
+    width: 100%;
+  }
 `;
 
 export const Logo = () => (

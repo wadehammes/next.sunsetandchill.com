@@ -23,11 +23,7 @@ export const SidebarWrapper = styled(Container)`
 
   @media ${device.tablet} {
     position: fixed;
-    width: ${({ theme }) => theme.grid.sidebar.tablet};
-  }
-
-  @media ${device.laptop} {
-    width: ${({ theme }) => theme.grid.sidebar.laptop};
+    width: ${({ theme }) => theme.grid.sidebar};
   }
 `;
 

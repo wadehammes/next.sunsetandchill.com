@@ -10,10 +10,7 @@ export const theme = {
     desktop: "5em",
   },
   grid: {
-    sidebar: {
-      tablet: "20em",
-      laptop: "32em",
-    },
+    sidebar: "32em",
   },
 };
 
