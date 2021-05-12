@@ -4,9 +4,7 @@ import Sidebar from "src/components/Sidebar/Sidebar.component";
 
 export const PageStructure: FC = ({ children }) => (
   <Grid data-testid="scPageStructure" gridHeight="100vh">
-    <div>
-      <Sidebar>Sidebar</Sidebar>
-    </div>
+    <Sidebar />
     <Content data-testid="scContent">{children}</Content>
   </Grid>
 );

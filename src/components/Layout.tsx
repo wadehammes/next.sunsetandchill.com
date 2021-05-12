@@ -30,5 +30,6 @@ export const Content = styled(Container)`
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
+  flex-flow: column nowrap;
   height: 100%;
 `;
