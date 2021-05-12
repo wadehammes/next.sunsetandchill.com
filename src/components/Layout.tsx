@@ -2,25 +2,23 @@ import { device } from "src/styles/theme";
 import styled from "styled-components";
 import { P } from "src/components/Typography";
 
-interface GridProps {
-  gridHeight?: number | null;
-}
-
-export const Grid = styled.div<GridProps>`
+export const Grid = styled.div`
   display: grid;
-  grid-template-rows: 8em 1fr;
+  grid-template-columns: 1fr;
   grid-gap: 0;
-  height: ${({ gridHeight = 500 }) =>
-    gridHeight ? `${gridHeight}px` : "100vh"};
   width: 100%;
+
+  @media ${device.laptop} {
+    grid-template-columns: ${({ theme }) => theme.grid.sidebar} 1fr;
+  }
 `;
 
 export const Container = styled.div`
-  padding: ${({ theme }) => theme.sizing.mobilePadding};
+  padding: ${({ theme }) => theme.padding.mobile};
   width: 100%;
 
   @media ${device.tablet} {
-    padding: ${({ theme }) => theme.sizing.desktopPadding};
+    padding: ${({ theme }) => theme.padding.desktop};
   }
 `;
 
@@ -28,6 +26,13 @@ export const Content = styled(Container)`
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
+  height: 100%;
+`;
+
+export const Sidebar = styled(Container)`
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
   height: 100%;
 `;
 
