@@ -9,9 +9,9 @@ create_component_file() {
     echo
     echo "const ${component_name}Wrapper = styled.div``;" 
     echo
-    echo "export const ${component_name}: FC = () => {"
-    echo "  return <${component_name}Wrapper data-testid=\"sc${component_name}\"}>Hello World!</${component_name}Wrapper>;"
-    echo "};"
+    echo "export const ${component_name}: FC = ({ children }) => ("
+    echo "  <${component_name}Wrapper data-testid=\"sc${component_name}\">{children}</${component_name}Wrapper>"
+    echo ");"
     echo
     echo "export default ${component_name};"
   }  >> "$component_name.component.tsx"
