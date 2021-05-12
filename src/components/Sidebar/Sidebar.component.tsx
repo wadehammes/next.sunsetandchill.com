@@ -19,7 +19,7 @@ export const SidebarWrapper = styled(Container)`
   left: 0;
   top: 0;
   width: 100%;
-  overflow-y: scroll;
+  overflow-y: auto;
 
   @media ${device.tablet} {
     position: fixed;
