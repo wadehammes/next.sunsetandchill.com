@@ -1,20 +1,16 @@
 export const theme = {
   colors: {
-    gray: "#95A3A4",
-    black: "#393d3f",
+    black: "#171717",
     white: "#fdfdff",
-    silver: "#c6c5b9",
-    teal: "#62929e",
-    blue: "#546a7b",
-    green: "hsla(145,55%,58%,1)",
-    red: "hsla(350,95%,58%,0.83)",
-    purple: "hsla(229,94%,76%,0.915)",
-    trueBlack: "hsla(5,92%,1%,0.83)",
-    alphaBlack: "rgba(0, 0, 0, 0.25)",
+    trueWhite: "#FFF",
+    trueBlack: "#000",
   },
-  sizing: {
-    mobilePadding: "1.75em",
-    desktopPadding: "5em",
+  padding: {
+    mobile: "1.5em",
+    desktop: "3em",
+  },
+  grid: {
+    sidebar: "24em",
   },
 };
 

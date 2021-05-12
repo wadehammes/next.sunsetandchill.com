@@ -1,3 +1,5 @@
+export type EntryId = number | string;
+
 export enum Environments {
   Local = "local",
   Staging = "staging",

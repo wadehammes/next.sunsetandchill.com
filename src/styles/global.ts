@@ -51,17 +51,9 @@ export const GlobalStyles = createGlobalStyle`
     text-decoration: underline;
     font-weight: ${FontWeight.Bold};
 
-    &:hover {
-      background-color: ${theme.colors.red};
-      text-decoration: none;
-      color: ${theme.colors.white};
-      cursor: pointer;
-    }
-
+    &:hover,
     &:focus {
-      background-color: ${theme.colors.red};
-      text-decoration: none;
-      color: ${theme.colors.white};
+      cursor: pointer;
     }
   }
   [hidden], .hidden {
