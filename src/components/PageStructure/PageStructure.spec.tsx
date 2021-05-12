@@ -1,5 +1,5 @@
 import React from "react";
-import { render, screen, waitFor } from "@testing-library/react";
+import { render, screen, waitFor } from "test-utils";
 import { PageStructure } from "src/components/PageStructure/PageStructure.component";
 
 const testId = "scPageStructure";

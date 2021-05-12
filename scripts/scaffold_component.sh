@@ -23,7 +23,7 @@ create_spec_file() {
   touch "$component_name.spec.tsx"
   {
     echo 'import React from "react";'
-    echo 'import { render, screen, waitFor } from "@testing-library/react";'
+    echo 'import { render, screen, waitFor } from "test-utils";'
     echo "import { ${component_name} } from \"src/components/${component_name}/${component_name}.component\";"
     echo
     echo "const testId = \"sc${component_name}\""
