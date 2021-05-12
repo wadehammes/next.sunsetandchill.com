@@ -12,8 +12,12 @@ export const Grid = styled.div<GridProps>`
   width: 100%;
   height: ${({ gridHeight }) => gridHeight ?? "100vh"};
 
+  @media ${device.tablet} {
+    grid-template-columns: ${({ theme }) => theme.grid.sidebar.tablet} 1fr;
+  }
+
   @media ${device.laptop} {
-    grid-template-columns: ${({ theme }) => theme.grid.sidebar} 1fr;
+    grid-template-columns: ${({ theme }) => theme.grid.sidebar.laptop} 1fr;
   }
 `;
 
@@ -27,9 +31,14 @@ export const Container = styled.div`
 `;
 
 export const Content = styled(Container)`
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-flow: column nowrap;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: ${({ theme }) => theme.padding.mobile};
   height: 100%;
+  text-align: center;
+
+  @media ${device.tablet} {
+    padding-left: 0;
+    grid-gap: ${({ theme }) => theme.padding.desktop};
+  }
 `;

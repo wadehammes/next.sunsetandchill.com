@@ -35,7 +35,7 @@ export const GlobalStyles = createGlobalStyle`
     font-family: monospace;
     font-size: 14px;
 
-    @media ${device.tablet} {
+    @media ${device.laptop} {
       font-size: 16px;
     }
   }
@@ -46,6 +46,7 @@ export const GlobalStyles = createGlobalStyle`
     max-width: 100%;
   }
   a {
+    display: inline-block;
     color: ${theme.colors.white};
     font-family: inherit;
     text-decoration: underline;
@@ -61,5 +62,10 @@ export const GlobalStyles = createGlobalStyle`
   }
   strong, b {
     font-weight: ${FontWeight.Bold};
+  }
+  p {
+    padding-bottom: 1.5em;
+    line-height: 1.5;
+    text-align: left;
   }
 `;

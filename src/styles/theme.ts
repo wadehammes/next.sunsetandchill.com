@@ -6,11 +6,14 @@ export const theme = {
     trueBlack: "#000",
   },
   padding: {
-    mobile: "1.5em",
-    desktop: "3em",
+    mobile: "3em",
+    desktop: "5em",
   },
   grid: {
-    sidebar: "24em",
+    sidebar: {
+      tablet: "20em",
+      laptop: "24em",
+    },
   },
 };
 
