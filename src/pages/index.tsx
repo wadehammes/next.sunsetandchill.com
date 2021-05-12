@@ -9,7 +9,7 @@ const Home: FC = () => (
         src={`/images/${index}.jpg`}
         height="625"
         width="1000"
-        alt=""
+        alt={`Sunset & Chill Image ${index}`}
         quality={100}
         loading="lazy"
         layout="responsive"
