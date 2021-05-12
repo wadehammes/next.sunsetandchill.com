@@ -15,6 +15,17 @@ const Home: FC = () => (
         layout="responsive"
       />
     ))}
+    <p>
+      All images via{" "}
+      <a
+        href="https://www.facebook.com/rob.klug.52"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Rob Klug
+      </a>{" "}
+      unless otherwise watermarked.
+    </p>
   </PageStructure>
 );
 
