@@ -1,5 +1,3 @@
-const SentryWebpackPlugin = require("@sentry/webpack-plugin");
-
 module.exports = {
   productionBrowserSourceMaps: true,
   env: {
