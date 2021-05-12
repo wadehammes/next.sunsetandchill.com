@@ -54,8 +54,9 @@ const Social = styled.div`
 `;
 
 export const Sidebar: FC = () => (
-  <div data-testid="scGridSidebarColumn">
+  <article data-testid="scGridSidebarColumn">
     <SidebarWrapper data-testid="scSidebar">
+      <h1 hidden>Sunset & Chill</h1>
       <Link href="/">
         <a>
           <Logo />
@@ -72,18 +73,24 @@ export const Sidebar: FC = () => (
         arts, and of course, a beautiful sunset.
       </p>
       <Social>
-        <a href="mailto:lords@sunsetandchill.com">
+        <a href="mailto:lords@sunsetandchill.com" aria-label="Email us">
           <Email />
         </a>
-        <a href="https://www.instagram.com/sunsetnchilldc/">
+        <a
+          href="https://www.instagram.com/sunsetnchilldc/"
+          aria-label="Follow us on Instagram"
+        >
           <Instagram />
         </a>
-        <a href="https://www.facebook.com/sunsetnchill">
+        <a
+          href="https://www.facebook.com/sunsetnchill"
+          aria-label="Like us on Facebook"
+        >
           <Facebook />
         </a>
       </Social>
     </SidebarWrapper>
-  </div>
+  </article>
 );
 
 export default Sidebar;

@@ -12,7 +12,7 @@ export const theme = {
   grid: {
     sidebar: {
       tablet: "20em",
-      laptop: "24em",
+      laptop: "32em",
     },
   },
 };
