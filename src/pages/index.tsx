@@ -1,18 +1,32 @@
-import { FC } from "react";
+import { FC, ReactElement } from "react";
 import Image from "next/image";
 import PageStructure from "src/components/PageStructure/PageStructure.component";
+import { GetStaticProps } from "next";
 
-const Home: FC = () => (
+interface IImageMap {
+  id: number;
+  file: string;
+}
+
+const imageMap: IImageMap[] = [...new Array(25)].map(
+  (image, index: number) => ({
+    id: index,
+    file: `/images/${index}.jpg`,
+  }),
+);
+
+const Home: FC = (): ReactElement => (
   <PageStructure>
-    {[...new Array(25)].map((image, index: number) => (
+    {imageMap.map((image: IImageMap) => (
       <Image
-        src={`/images/${index}.jpg`}
+        src={image.file}
         height="625"
         width="1000"
-        alt={`Sunset & Chill Image ${index}`}
+        alt={`Sunset & Chill Image ${image.id}`}
         quality={100}
         loading="lazy"
         layout="responsive"
+        key={image.id}
       />
     ))}
     <p>
@@ -28,5 +42,11 @@ const Home: FC = () => (
     </p>
   </PageStructure>
 );
+
+// eslint-disable-next-line require-await
+export const getStaticProps: GetStaticProps = async () => ({
+  props: {},
+  revalidate: 1,
+});
 
 export default Home;
