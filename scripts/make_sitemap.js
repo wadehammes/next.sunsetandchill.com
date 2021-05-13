@@ -2,7 +2,7 @@ const fs = require("fs");
 
 const path = ".next/prerender-manifest.json";
 const sitemapPath = "public/sitemap.xml";
-const baseUrl = "https://www.sunsetandchill.com";
+const baseUrl = "https://sunsetandchill.com";
 const lastModTime = new Date().toISOString();
 
 const manifestContents = fs.readFileSync(path, "utf-8");
