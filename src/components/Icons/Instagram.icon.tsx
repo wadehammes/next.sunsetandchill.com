@@ -1,5 +1,3 @@
-import React from "react";
-
 export const Instagram = () => (
   <svg
     aria-hidden="true"
