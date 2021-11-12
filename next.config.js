@@ -3,9 +3,6 @@ module.exports = {
   env: {
     ENVIRONMENT: process.env.ENVIRONMENT,
   },
-  future: {
-    webpack5: true,
-  },
   async headers() {
     return [
       {
