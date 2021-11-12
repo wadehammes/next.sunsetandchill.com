@@ -40,17 +40,6 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-7THQXZKB24"
-          />
-          <script
-            // eslint-disable-next-line react/no-danger
-            dangerouslySetInnerHTML={{
-              __html:
-                "window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date()); gtag('config', 'G-7THQXZKB24');",
-            }}
-          />
           <link rel="icon" href="favicon.ico" />
         </Head>
         <body>
