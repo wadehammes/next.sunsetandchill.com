@@ -1,5 +1,3 @@
-![CI | Lint/Test](https://github.com/wadehammes/next.sunsetandchill.com/actions/workflows/ci.yml/badge.svg)
-
 # Sunset & Chill
 
 Site powered by Next.js/Typescript/Styled Components.
