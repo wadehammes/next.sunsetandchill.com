@@ -4026,10 +4026,10 @@ is-weakref@^1.0.1:
   dependencies:
     call-bind "^1.0.0"
 
-isbot@^3.4.0:
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/isbot/-/isbot-3.4.0.tgz#0ed718323f00de43adc2cba1cc3123bc44450524"
-  integrity sha512-0WOb6bbJ6gtpWVHQ30r5MzqvSrCNbZ70wFXAJWdXt/0LulF59uvBQnPgA7IelbOXEpV+CtLWkDxLB4TU7f0+VA==
+isbot@^3.5.3:
+  version "3.5.3"
+  resolved "https://registry.yarnpkg.com/isbot/-/isbot-3.5.3.tgz#e4264044a1016172159db3385a18f9e0af5781fd"
+  integrity sha512-mMLxdBl0hB6UEDibl/nXPSmF+kjX9cOKEJw1YeiKBGr6AdZq/LQUsk7UlDfr/D3gU+PdR6hf8o72BLOxzgw6EA==
 
 isexe@^2.0.0:
   version "2.0.0"
